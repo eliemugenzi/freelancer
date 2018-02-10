@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Freelancer Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+    <script type="text/javascript">
+      $(document).ready(()=>{
+        $(".menu").hide();
+        $("#toggle").click(()=>{
+          $(".menu").slideToggle(500);
+        });
+        $(".home-link").click(()=>{
+          $path=$("#showcase").offset().top;
+          $("body,html").animate({
+            scrollTop:$path
+          },1000);
+          $(".menu").slideUp(500);
+        });
+        $(".about-link").click(()=>{
+          $path=$("#about").offset().top;
+          $("body,html").animate({
+            scrollTop:$path
+          },1000);
+          $(".menu").slideUp(500);
+        });
+        $(".skills-link").click(()=>{
+          $path=$("#skills").offset().top;
+          $("body,html").animate({
+            scrollTop:$path
+          },1000);
+          $(".menu").slideUp(500);
+        });
+        $(".portfolio-link").click(()=>{
+          $path=$("#portfolio").offset().top;
+          $("body,html").animate({
+            scrollTop:$path
+          },1000);
+          $(".menu").slideUp(500);
+        });
+        $(".contact-link").click(()=>{
+          $path=$("#contact").offset().top;
+          $("body,html").animate({
+            scrollTop:$path
+          },1000);
+          $(".menu").slideToggle(500);
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-desktop">
+        <h2 class="brand"><a href="#showcase" class="home-link">Elie Mugenzi</a></h2>
+        <ul>
+          <li><a href="#showcase" class="home-link">Home</a></li>
+          <li><a href="#about" class="about-link">About</a></li>
+          <li><a href="#skills" class="skills-link">Skills</a></li>
+          <li><a href="#portfolio" class="portfolio-link">Portfolio</a></li>
+          <li><a href="#contact" class="contact-link">Contact</a></li>
+        </ul>
+      </nav>
+      <nav id="nav-mobile">
+        <div class="head">
+          <h2 class="brand"><a href="#showcase" class="home-link">Elie Mugenzi</a></h2>
+          <button type="button" name="button" class="menu-btn" id="toggle"><i class="fa fa-bars fa-2x"></i></button>
+        </div>
+        <div class="menu">
+          <a href="#showcase" class="home-link">Home</a>
+          <a href="#about" class="about-link">About</a>
+          <a href="#skills" class="skills-link">Skills</a>
+          <a href="#portfolio" class="portfolio-link">Portfolio</a>
+          <a href="#contact" class="contact-link">Contact</a>
+        </div>
+
+      </nav>
+    </header>
+    <section id="showcase">
+      <div class="intro">
+        <h2>Freelance Web designer and developer.</h2><br>
+        Lorem ipsum dolor sit amet,no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          Stet clita kasd gubergren,<br><br><br>
+          <a href="#about" class="btn about-link">Who I am</a>
+
+
+      </div>
+    </section>
+    <section id="about">
+      <div class="myself">
+        <div>
+          <h3>ABOUT ME</h3><br>
+          Lorem ipsum dolor sit amet,sed diam voluptua.
+           At vero eos et accusam et justo duo dolores et ea rebum.
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+              At vero eos et accusam et justo duo dolores et ea rebum.
+
+
+        </div>
+        <div>
+          Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              At vero eos et accusam et justo duo dolores et ea rebum.
+
+
+        </div>
+      </div>
+      <div class="me">
+        <div>
+          <h3>I AM ELIE MUGENZI</h3><br>
+          Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              At vero eos et accusam et justo duo dolores et ea rebum.
+              <br>
+              Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+               no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                At vero eos et accusam et justo duo dolores et ea rebum.
+                <br><br><br>
+                <a href="http://eliemugenzi.epizy.com" target="_blank" class="btn">More</a>
+
+
+
+
+        </div>
+        <div>
+          <img src="./img/elie.JPG" height="200px" width="200px" alt="">
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h3 class="title">SKILLS</h3>
+      <div class="skills-list">
+        <div>
+          <i class="fa fa-desktop fa-3x"></i><br>
+          <h3>Web Design</h3><br>
+          Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+            Stet clita kasd gubergren,
+              At vero eos et accusam et justo duo dolores et ea rebum.
+
+
+        </div>
+        <div>
+          <i class="fa fa-globe fa-3x"></i><br>
+          <h3>SEO & SEM</h3><br>
+          Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+            Stet clita kasd gubergren,
+             At vero eos et accusam et justo duo dolores et ea rebum.
+
+
+        </div>
+        <div>
+          <i class="fa fa-code fa-3x"></i><br>
+          <h3>Web Development</h3><br>
+          Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+           Stet clita kasd gubergren,
+            At vero eos et accusam et justo duo dolores et ea rebum.
+
+
+        </div>
+        <div>
+          <i class="fa fa-mobile fa-3x"></i><br>
+          <h3>Mobile Apps Development</h3><br>
+          Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,
+           Stet clita kasd gubergren,
+            At vero eos et accusam et justo duo dolores et ea rebum.
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h3 class="title">PORTFOLIO</h3>
+      <div class="facts">
+        <div>
+          CODE <br>
+          <b>1400</b>
+        </div>
+        <div>
+          DESIGN <br>
+          <b>95</b>
+        </div>
+        <div>
+          PROJECTS <br>
+          <b>85</b>
+        </div>
+      </div>
+      <div class="gallery">
+        <div>
+          <a href="./img/codingchoice-logo-alt-2.png" data-lightbox="roadTrip"><img src="./img/codingchoice-logo-alt-2.png" width="150px" height="150px" alt=""></a>
+
+        </div>
+        <div>
+          <a href="./img/pexels-photo-109371-web-design.jpeg" data-lightbox="roadTrip">
+            <img src="./img/pexels-photo-109371-web-design.jpeg" width="150px" height="150px" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="./img/passion.jpg" data-lightbox="roadTrip">
+            <img src="./img/passion.jpg" width="150px" height="150px" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="./img/pexels-photo-209151.jpeg" data-lightbox="roadTrip">
+            <img src="./img/pexels-photo-209151.jpeg" height="150px" width="150px" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="./img/codingchoice-logo1.jpg" data-lightbox="roadTrip">
+            <img src="./img/codingchoice-logo1.jpg" width="150px" height="150px" alt="">
+          </a>
+        </div>
+        <div>
+          <a href="./img/pexels-photo-9999.jpg" data-lightbox="roadTrip">
+            <img src="./img/pexels-photo-9999.jpg" width="150px" height="150px" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h3 class="title">CONTACT ME</h3>
+      <form method="post">
+        <input type="text" name="" value="" placeholder="Name"><br>
+        <input type="email" name="" value="" placeholder="Email"><br>
+        <input type="text" name="" value="" placeholder="Subject"><br>
+        <textarea name="name" rows="4" cols="40" placeholder="Message"></textarea><br>
+       <input type="submit" name="" value="Send" class="btn">
+      </form>
+    </section>
+    <footer>
+      <div>
+        &copy; <span>2018</span> &nbsp;<a href="http://eliemugenzi.epizy.com" target="_blank" class="my-link">Elie Mugenzi</a><br>
+      </div>
+      <div>
+        <h3>FOLLOW ME</h3><br>
+        <div class="social">
+          <i class="fa fa-facebook fa-2x"></i>
+          <i class="fa fa-twitter fa-2x"></i>
+          <i class="fa fa-instagram fa-2x"></i>
+          <i class="fa fa-github fa-2x"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
