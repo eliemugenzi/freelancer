@@ -213,6 +213,9 @@ footer .social{
     margin-bottom:10px;
     padding:10px 10px;
   }
+  #showcase{
+    padding-bottom:30px;
+  }
   #about .myself,#about .me{
     display: block;
     margin-bottom:30px;
